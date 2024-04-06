@@ -478,7 +478,7 @@ function StormHubLib:MakeWindow(WindowConfig)
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "StormHub "
+	WindowConfig.IntroText = WindowConfig.IntroText or "StormHub"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://7733771891"
@@ -1731,7 +1731,7 @@ function StormHubLib:MakeWindow(WindowConfig)
 	--		end
 	--		StormHubLib:MakeNotification({
 	--			Name = "UI  Available",
-	--			Content = "New UI  Available - Joining Discord (#announcements)",
+	--			Content = "New UI Available - Joining Discord (#announcements)",
 	--			Time = 8
 	--		})
 	--		spawn(function()
