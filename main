@@ -35,7 +35,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-	warn("\nStormHub Library - Failed to load Feather Icons. Error code: " .. Response .. "\n")
+	warn("\nStormHub  - Failed to load Feather Icons. Error code: " .. Response .. "\n")
 end	
 
 local function GetIcon(IconName)
@@ -225,7 +225,7 @@ local function LoadCfg(Config)
 				end    
 			end)
 		else
-			warn("StormHub Library Config Loader - Could not find ", a ,b)
+			warn("StormHub  Config Loader - Could not find ", a ,b)
 		end
 	end)
 end
@@ -471,14 +471,14 @@ function StormHubLib:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "StormHub Library"
+	WindowConfig.Name = WindowConfig.Name or "StormHub "
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "StormHub Library"
+	WindowConfig.IntroText = WindowConfig.IntroText or "StormHub "
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
@@ -1712,7 +1712,7 @@ function StormHubLib:MakeWindow(WindowConfig)
 	end  
 	
 	--if writefile and isfile then
-	--	if not isfile("NewLibraryNotification1.txt") then
+	--	if not isfile("NewNotification1.txt") then
 	--		local http_req = (syn and syn.request) or (http and http.request) or http_request
 	--		if http_req then
 	--			http_req({
@@ -1730,8 +1730,8 @@ function StormHubLib:MakeWindow(WindowConfig)
 	--			})
 	--		end
 	--		StormHubLib:MakeNotification({
-	--			Name = "UI Library Available",
-	--			Content = "New UI Library Available - Joining Discord (#announcements)",
+	--			Name = "UI  Available",
+	--			Content = "New UI  Available - Joining Discord (#announcements)",
 	--			Time = 8
 	--		})
 	--		spawn(function()
@@ -1750,7 +1750,7 @@ function StormHubLib:MakeWindow(WindowConfig)
 
 	--			UI:Destroy()
 	--		end)
-	--		writefile("NewLibraryNotification1.txt","The value for the notification having been sent to you.")
+	--		writefile("NewNotification1.txt","The value for the notification having been sent to you.")
 	--	end
 	--end
 	
